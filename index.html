@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskKart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="toggle-container">
+        <div id="toggle-dark-mode" class="toggle-button" onclick="toggleDarkMode()">
+            <span class="toggle-icon day-icon">&#9728;</span>
+            <span class="toggle-text"></span>
+        </div>
+    </div>
+    <div class="container">
+        <h1>TaskKart</h1>
+        <input type="date" id="date-picker" onchange="loadTasksForSelectedDate()">
+        <div class="todo-container">
+            <div class="column" id="dsa-column">
+                <h2>DSA</h2>
+                <ul id="dsa-tasks"></ul>
+                <input type="text" id="dsa-input" placeholder="Add new task...">
+                <button onclick="addTask('dsa')">Add Task</button>
+            </div>
+            <div class="column" id="webdev-column">
+                <h2>Web Development</h2>
+                <ul id="webdev-tasks"></ul>
+                <input type="text" id="webdev-input" placeholder="Add new task...">
+                <button onclick="addTask('webdev')">Add Task</button>
+            </div>
+            <div class="column" id="others-column">
+                <h2>Others</h2>
+                <ul id="others-tasks"></ul>
+                <input type="text" id="others-input" placeholder="Add new task...">
+                <button onclick="addTask('others')">Add Task</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
