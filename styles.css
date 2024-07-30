@@ -245,3 +245,31 @@ body.dark-mode .column li {
         font-size: 0.8em;
     }
 }
+/* Add this at the end of your styles.css */
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode footer {
+    color: #f4f4f4;
+}
+
+body.dark-mode footer a {
+    color: #1e90ff;
+}
+
